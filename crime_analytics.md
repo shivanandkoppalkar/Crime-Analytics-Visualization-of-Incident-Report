@@ -82,7 +82,7 @@ PlotOnStaticMap(sfomap,sfo$Latidude,sfo$Longitude,pch=20,cex=0.7, col=colorarray
 legend("topright",legend = catforcomp, fill=colorarray[unique(sfo$Category)],cex=0.5)
 ```
 
-![](geoplots-1.png)\
+![](geoplots-1.png)
 
 
 ###Seattle
@@ -96,7 +96,7 @@ legend("topright",legend = catforcomp, fill=colorarray[unique(sea$Category)],
        cex=0.5)
 ```
 
-![](geosea-1.png)\
+![](geosea-1.png)
 
 
 
@@ -117,7 +117,7 @@ legend("topright",legend = unique(sfo$District), fill=col2[unique(sfo$District)]
        cex=0.5)
 ```
 
-![](locboxplots-1.png)\
+![](locboxplots-1.png)
 
 
 ```r
@@ -126,7 +126,7 @@ g <- ggplot(data=sfo, aes(Category)) + stat_count() +
 print(g)
 ```
 
-![](locboxplots2-1.png)\
+![](locboxplots2-1.png)
 
 
 ###Seattle
@@ -140,7 +140,7 @@ legend("topright",legend = unique(sea$District), fill=col2[unique(sea$District)]
        cex=0.5)
 ```
 
-![](boxplsea-1.png)\
+![](boxplsea-1.png)
 
 
 
@@ -151,7 +151,7 @@ g <- ggplot(data=sea, aes(Category)) + stat_count() +
 print(g)
 ```
 
-![](boxplsea2-1.png)\
+![](boxplsea2-1.png)
 
 
 ##Timeline plots
@@ -177,7 +177,7 @@ g <- ggplot(data=hrlysfo, aes(Hour,n)) + geom_line() +
 g
 ```
 
-![](hourly-1.png)\
+![](hourly-1.png)
 
 The total number of crimes per day plotted against the hour of the day show a similar pattern for all weekdays except Friday. From a low in the early morning hours around 5am, the number of crimes rise almost steadily with a large increase in the later afternoon hours leading to a maximum around 7pm and then they fall rapidly after 8pm. On Fridays and Saturdays, crime rates during the day are similar to the other weekdays, but they keep on rising well after 8pm. This is probably indicative of a more active nightlife on those two evenings leading to higher crime rates. On Sundays, crime rates are mostly constant throughout the day from around 11am to 9pm and low at all other times.
 
@@ -191,7 +191,7 @@ g <- ggplot(data=hrlysea, aes(Hour,n)) + geom_line() +
 g
 ```
 
-![](timesea-1.png)\
+![](timesea-1.png)
 
 There is much less variation in the number of crimes between the different weekdays in Seattle. All days have lower crime rates in the early morning hours with the minimum around 5am which is the same as San Francisco. However, there isn't a clear peak of crime in the late afternoon/early evening hours such as the one of San Francisco. Instead, crime tends to occur throughout the day with smaller peaks around noon, mid afternoon and early evening. Rates seem to start falling around 9pm on all days except Saturdays and Tuesdays and Thursdays appear to have a bit less crime than the other days of the week.
 
@@ -211,7 +211,7 @@ g <- ggplot(data=hrlycatsfo, aes(Hour,n)) + geom_line() +
 g
 ```
 
-![](hrlybytype-1.png)\
+![](hrlybytype-1.png)
 
 
 ###Hourly variation of crime categories in Seattle
@@ -226,7 +226,7 @@ g <- ggplot(data=hrlycatsea, aes(Hour,n)) + geom_line() +
 g
 ```
 
-![](hrlybytypesea-1.png)\
+![](hrlybytypesea-1.png)
 
 
 ###Daily variation of crime categories in San Francisco
@@ -243,7 +243,7 @@ g <- ggplot(data=hrlycatdaysfo, aes(Hour,n)) + geom_line(aes(color=Category)) +
 g
 ```
 
-![](hrlybytypeanddat-1.png)\
+![](hrlybytypeanddat-1.png)
 
 
 ###Daily variation of crime categories in Seattle
@@ -258,7 +258,7 @@ g <- ggplot(data=hrlycatdaysea, aes(Hour,n)) + geom_line(aes(color=Category)) +
 g
 ```
 
-![](hrlybytypeanddatsea-1.png)\
+![](hrlybytypeanddatsea-1.png)
 
 
 ##Conclusion
